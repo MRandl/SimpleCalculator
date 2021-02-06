@@ -1,6 +1,4 @@
-module Queue(Queue, empty, fromList, Queue.concat, pop, push) where
-
-import Data.Maybe ( isNothing )
+module Queue ( Queue, empty, fromList, Queue.concat, pop, push ) where
 
 data Queue a = Cons [a] [a] | Conc (Queue a) (Queue a) deriving Show
 

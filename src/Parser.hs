@@ -1,8 +1,8 @@
-module Parser(inputParser, Token(..)) where
+module Parser ( inputParser, Token(..) ) where
 
 import Control.Applicative ( Alternative((<|>)) )
-import Operation ( Operation, Bracket, opFromChar, brackFromChar )
 import Text.ParserCombinators.ReadP ( ReadP, eof, manyTill, munch1, satisfy )
+import Operation ( Operation, Bracket, opFromChar, brackFromChar )
 
 data Token = Op Operation | Br Bracket | In Integer deriving (Eq, Show)
 

@@ -1,8 +1,8 @@
-module ShuntingYard(evaluateTokenList) where
-import Queue ( concat, empty, fromList, pop, push, Queue )
+module ShuntingYard ( evaluateTokenList ) where
+
+import Queue  ( concat, empty, fromList, pop, push, Queue )
 import Parser ( Token(..) )
-import Operation
-    ( isLeftAssociative, priority, Bracket(Closed, Open), apply )
+import Operation  ( isLeftAssociative, priority, Bracket(..), apply )
 import Data.Maybe ( listToMaybe, mapMaybe )
 
 evaluateTokenList :: [Token] -> Maybe Integer

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d22711255bf1d37d4b7c6192a76ad8e13fd580c20e9b8450f05dfc48b48d0933
+-- hash: 12c74d337ae28648bfaabf9d2bcdfcb30fa7c656b30d761941f4ab9c953e5f36
 
 name:           simpleCalculator
 version:        0.1.0.0
@@ -28,6 +28,10 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Operation
+      Parser
+      Queue
+      ShuntingYard
   other-modules:
       Paths_simpleCalculator
   hs-source-dirs:
